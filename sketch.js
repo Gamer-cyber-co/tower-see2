@@ -8,9 +8,11 @@ var holder,ball,ground;
 var stand1,stand2;
 var ball;
 var slingShot;
-var polygon_img;
+var polygon_img,bg;
+
 function preload(){
-  polygon_img=loadImage("polygon.png");
+  polygon_img=loadImage("polygon.jpeg");
+  bg = loadImage("bg.jpg");
 }
 function setup() {
   createCanvas(900,400);
@@ -51,7 +53,7 @@ function setup() {
    World.add(world,polyString);
 }
 function draw() {
-  background(56,44,44); 
+  background(bg); 
  
   textSize(20);
   fill("lightyellow");
@@ -94,3 +96,8 @@ function mouseDragged(){
 function mouseReleased(){
  polyString.fly();
 }
+function keyPressed(){
+  if(keyCode === 32){
+  polyString.attach(this.polygon);
+  }
+  }
