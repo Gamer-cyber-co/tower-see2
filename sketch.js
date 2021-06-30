@@ -11,7 +11,7 @@ var slingShot;
 var polygon_img,bg;
 
 function preload(){
-  polygon_img=loadImage("polygon.jpeg");
+  polygon_img=loadImage("polygon.png");
   bg = loadImage("bg.png");
 }
 function setup() {
