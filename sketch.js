@@ -12,7 +12,7 @@ var polygon_img,bg;
 
 function preload(){
   polygon_img=loadImage("polygon.jpeg");
-  bg = loadImage("bg.jpg");
+  bg = loadImage("bg.png");
 }
 function setup() {
   createCanvas(900,400);
